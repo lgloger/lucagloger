@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luca Gloger - QR Code Generator</title>
+    <link rel="icon" href="../assets/logo/faviconV2.svg" />
+    <link rel="stylesheet" href="../styles/qr-code.css" />
+    <link rel="stylesheet" href="../styles/navBar.css" />
+    <script src="../navBarAnimation.js" defer></script>
+    <script src="../qr-code.js" defer></script>
+  </head>
+  <body>
+    <div class="infoContainer">
+      <span class="infoText"
+        >This page is currently in beta. I'm still improving it, so please
+        excuse any errors.</span
+      >
+    </div>
+    <div class="mainSection">
+      <span class="sectionHeader">QR Code generator</span>
+      <div class="qrCodeCon">
+        <div class="firstConSection">
+          <input type="text" id="qrCodeInput" placeholder="Text or URL" />
+          <button id="inputBtn">
+            <svg
+              class="inputBtnIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+            >
+              <path
+                d="m382-354 339-339q12-12 28-12t28 12q12 12 12 28.5T777-636L410-268q-12 12-28 12t-28-12L182-440q-12-12-11.5-28.5T183-497q12-12 28.5-12t28.5 12l142 143Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="qrCodeImageCon show">
+          <img id="qrCodeImage" src="" alt="qrImage" />
+        </div>
+      </div>
+    </div>
+    <div class="glassEffectHeader">
+      <div class="glassEffectLogo glassEffectLogoAnimation">
+        <a href="/" class="glassEffectButton">
+          <svg
+            class="glassIconHeader"
+            viewBox="0 0 71 71"
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            xmlns:serif="http://www.serif.com/"
+            style="
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 1.5;
+            "
+          >
+            <path
+              d="M17.204,20.487c0,0 9.446,8.796 20.163,8.958c10.717,0.183 22.475,-1.413 24.492,-15c1.692,-11.25 -14.096,-10.463 -18.796,-1.321c-4.558,8.867 -11.087,32.708 -11.087,32.708c0,0 -6.367,19.954 -17.267,18.425c-4.004,-0.554 -5.508,-2.337 -5.808,-4.283c-0.533,-3.45 3.217,-7.525 7.129,-7.012c6.113,0.788 15.025,6.667 17.546,8.496c3.008,2.221 7.892,8.333 22.779,-5.762"
+              style="fill: none; stroke-width: 7.63px"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="glassEffect glassEffectAnimation">
+        <a href="/#projects" class="glassEffectButton">
+          <svg
+            class="glassIconHeader glassEffectInsideAnimation"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+          >
+            <path
+              d="M128-302q-24-19-24.5-49.5T128-401q17-13 38.5-13.5T205-401l274 213 276-213q17-13 38-13.5t38 12.5q25 19 25 50t-24 50L556-88q-35 26-77.5 26.5T402-88L128-302Zm274-46L192-512q-49-38-49-99t49-99l210-164q35-26 77-26t77 26l210 164q49 38 49 99t-49 99L556-348q-35 26-77 26t-77-26Z"
+            />
+          </svg>
+        </a>
+        <a href="/tools" class="glassEffectButton">
+          <svg
+            class="glassIconHeader glassEffectInsideAnimation"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+          >
+            <path
+              d="M360-640h240v-80H360v80ZM120-160q-17 0-28.5-11.5T80-200v-160h160q0 17 11.5 28.5T280-320q17 0 28.5-11.5T320-360h320q0 17 11.5 28.5T680-320q17 0 28.5-11.5T720-360h160v160q0 17-11.5 28.5T840-160H120ZM80-400v-160q0-33 23.5-56.5T160-640h120v-80q0-33 23.5-56.5T360-800h240q33 0 56.5 23.5T680-720v80h120q33 0 56.5 23.5T880-560v160H720v-40q0-17-11.5-28.5T680-480q-17 0-28.5 11.5T640-440v40H320v-40q0-17-11.5-28.5T280-480q-17 0-28.5 11.5T240-440v40H80Z"
+            />
+          </svg>
+        </a>
+        <a href="/wallpaper" class="glassEffectButton">
+          <svg
+            class="glassIconHeader glassEffectInsideAnimation"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+          >
+            <path
+              d="M202.87-111.87q-37.78 0-64.39-26.61t-26.61-64.39v-188.04q0-19.16 13.17-32.33 13.18-13.17 32.33-13.17t32.33 13.17q13.17 13.17 13.17 32.33v188.04h188.04q19.16 0 32.33 13.17 13.17 13.18 13.17 32.33t-13.17 32.33q-13.17 13.17-32.33 13.17H202.87Zm554.26 0H569.09q-19.16 0-32.33-13.17-13.17-13.18-13.17-32.33t13.17-32.33q13.17-13.17 32.33-13.17h188.04v-188.04q0-19.16 13.17-32.33 13.18-13.17 32.33-13.17t32.33 13.17q13.17 13.17 13.17 32.33v188.04q0 37.78-26.61 64.39t-64.39 26.61ZM450-327.65l101.61-135.89q6.96-9.2 18.39-9.08 11.43.12 18.15 9.32l109.05 147q8.71 11.43 2.23 23.87Q692.96-280 679.04-280H280.96q-13.92 0-20.39-12.43-6.48-12.44 2.23-23.87l79.05-107q6.72-9.2 18.15-9.32 11.43-.12 18.39 9.08L450-327.65ZM111.87-757.13q0-37.78 26.61-64.39t64.39-26.61h188.04q19.16 0 32.33 13.17 13.17 13.18 13.17 32.33t-13.17 32.33q-13.17 13.17-32.33 13.17H202.87v188.04q0 19.16-13.17 32.33-13.18 13.17-32.33 13.17t-32.33-13.17q-13.17-13.17-13.17-32.33v-188.04Zm736.26 0v188.04q0 19.16-13.17 32.33-13.18 13.17-32.33 13.17t-32.33-13.17q-13.17-13.17-13.17-32.33v-188.04H569.09q-19.16 0-32.33-13.17-13.17-13.18-13.17-32.33t13.17-32.33q13.17-13.17 32.33-13.17h188.04q37.78 0 64.39 26.61t26.61 64.39ZM620-560q-26 0-43-17t-17-43q0-26 17-43t43-17q26 0 43 17t17 43q0 26-17 43t-43 17Z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

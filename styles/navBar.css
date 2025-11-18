@@ -47,6 +47,7 @@
   width: 22.5px;
   height: auto;
   fill: var(--icon-color);
+  stroke: var(--icon-color);
 }
 
 .glassEffect {

@@ -44,7 +44,7 @@ a {
 }
 
 body {
-  height: auto;
+  height: 1000px;
   margin: 0;
   background-color: var(--primary-backround-color);
   padding-top: 0;
@@ -90,11 +90,13 @@ body {
   color: var(--primary-text-color);
   padding-top: 10px;
   width: 100%;
+  max-width: 1360px;
 }
 
 .freeGamesList {
   height: auto;
   width: 100%;
+  max-width: 1360px;
   display: flex;
   align-items: center;
   justify-content: center;

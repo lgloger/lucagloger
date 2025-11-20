@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 30px; /* 30 */
+  bottom: 30px;
   gap: 8px;
   z-index: 9999;
 }

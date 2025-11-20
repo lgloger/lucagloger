@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let lastScrollY = window.scrollY;
   let scrollPeakY = lastScrollY;
+  const glassEffectHeader = document.querySelector(".glassEffectHeader");
   const glassEffectCon = document.querySelector(".glassEffect");
   const glassEffectLogo = document.querySelector(".glassEffectLogo");
   const glassIconHeader = document.querySelectorAll(".glassIconHeader");
@@ -20,10 +21,22 @@ document.addEventListener("DOMContentLoaded", () => {
       glassIconHeader.forEach((icon) => {
         icon.classList.remove("glassEffectInsideAnimation");
       });
+
+      // Set glassEffectHeader display none after animation
+      setTimeout(() => {
+        glassEffectHeader.style.display = "none";
+      }, "100");
     } else if (currentScrollY < lastScrollY) {
-      if (scrollPeakY - currentScrollY >= UPWARD_THRESHOLD || currentScrollY <= 50) {
+      if (
+        scrollPeakY - currentScrollY >= UPWARD_THRESHOLD ||
+        currentScrollY <= 50
+      ) {
         glassEffectLogo.classList.remove("glassEffectLogoAnimationOut");
         glassEffectCon.classList.remove("glassEffectAnimationOut");
+
+        // Set glassEffectHeader display flex before animation
+        glassEffectHeader.style.display = "flex";
+        
         glassEffectLogo.classList.add("glassEffectLogoAnimation");
         glassEffectCon.classList.add("glassEffectAnimation");
 
@@ -40,6 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
       glassIconHeader.forEach((icon) => {
         icon.classList.remove("glassEffectInsideAnimation");
       });
+
+      // Set glassEffectHeader display none after animation
+      setTimeout(() => {
+        glassEffectHeader.style.display = "none";
+      }, "100");
     }
 
     lastScrollY = currentScrollY;

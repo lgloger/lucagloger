@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const showNext = () => {
     img.style.backgroundImage = `url('${images[idx]}')`;
     idx = (idx + 1) % images.length;
-  }
+  };
 
   showNext();
   setInterval(showNext, 5000);

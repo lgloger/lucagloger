@@ -112,7 +112,6 @@ body {
   font-size: 28px;
   font-weight: 550;
   color: var(--primary-text-color);
-  
   line-height: 1.1428571429;
   text-align: center;
   margin-bottom: 30px;
@@ -218,7 +217,9 @@ body {
 .img-preview {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-image: url(../../assets/wallpapers/White-Black-Wallpaper-Preview.png);
+  background-size: cover;
+  transition: 1.5s ease-in-out;
 }
 
 .overlayBtnCon {

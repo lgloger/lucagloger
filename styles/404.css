@@ -57,23 +57,24 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.header {
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--primary-text-color);
-    margin-bottom: 30px;
+.errorImage {
+  height: 187px;
+  width: auto;
+  margin-bottom: 15px;
+  user-select: none;
 }
 
 .text {
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--primary-text-color);
-    margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .link {
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--primary-description-text-color);
-    margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  margin-bottom: 15px;
 }

@@ -307,6 +307,33 @@ body {
   stroke: var(--icon-color);
 }
 
+/* ---------- Footer ---------- */
+
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--secondary-backround-color);
+  padding: 30px 30px 30px 30px;
+  box-sizing: border-box;
+  gap: 24px;
+}
+
+.footerText {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footerText:hover {
+  text-decoration: underline;
+}
+
 /* ---------- Responsive ---------- */
 @media only screen and (max-width: 1068px) {
   .heroConTitleOne {

@@ -172,19 +172,109 @@ body {
 }
 
 .qrCodeImageCon {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #qrCodeImage {
-    height: 245px;
-    width: 245px;
-    border-radius: 8px;
+  height: 245px;
+  width: 245px;
+  border-radius: 8px;
 }
 
 .show {
-    display: none;
+  display: none;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  max-width: 1068px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-backround-color);
+  padding: 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.firstFooterSec {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 27.5px;
+  padding: 55px 0 55px 0;
+}
+
+.footerText,
+.footerTextTwo,
+.footerHeader {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--primary-description-text-color);
+  text-align: center;
+  text-decoration: none;
+  transition: 0.15s ease-in-out;
+}
+
+.footerText:hover {
+  color: var(--primary-text-color);
+}
+
+.footerHeader {
+  color: var(--primary-text-color);
+}
+
+.lastFooterSec {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secondCon {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footerIconLink {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 0.15s ease-in-out;
+}
+
+.footerIconLink:hover {
+  background-color: var(--glass-effect-hover-color);
+}
+
+.footerIcon {
+  width: 20px;
+  height: auto;
+  fill: var(--primary-description-text-color);
+  stroke: var(--primary-description-text-color);
+}
+
+@media only screen and (max-width: 1023px) {
+  .lastFooterSec {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
 }
